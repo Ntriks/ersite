@@ -1,0 +1,96 @@
+body {
+    margin: 0px;
+    background-color: #121212;
+}
+
+.hat {
+    position: sticky;
+    top: 0;
+    background-color: #121212;
+    padding-bottom: 25px;
+}
+
+.icon {
+    width: 250px;
+    margin-left: 22px;
+    margin-top: 25px;
+}
+
+.mainButton a {
+    text-decoration: none;
+    margin-right: 20px;
+    font-family: Agmena;
+    font-weight: 200px;
+    font-size: 40px;
+    position: relative;
+    float: right;
+    bottom: 47px;
+    color: rgb(216, 176, 117);
+}
+
+.title {
+    width: fit-content;
+    font-size: 50px;
+    color: white;
+    font-family: tahoma;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.secondTitle {
+    position: relative;
+    text-align: center;
+    font-size: 50px;
+    color: white;
+    margin-bottom: 25px;
+    bottom: 10px;
+}
+
+.Img {
+    width: 768px;
+}
+
+.mains{
+    /* background-image: url('classesImg/bgTextImg11.jpg'); */
+    padding-bottom: 270px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+}
+
+.mainText{
+    font-size: 20px;
+}
+
+.textLeft{
+    width: 768px;
+    float: left;
+    color: white;
+    font-family: tahoma;
+}
+
+.textRight{
+    width: 768px;
+    float: right;
+    color: white;
+    font-family: tahoma;
+}
+
+/* Classes */
+
+.mainClasses {
+    padding-top: 50px;
+}
+
+/* Endurance */
+
+.mainEndurance {
+    padding-bottom: 200px;
+}
+
+/* Strength */
+
+.mainStrength {
+    padding-bottom: 200px;
+}
