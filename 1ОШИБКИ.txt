@@ -1,0 +1,2 @@
+Как работает position absolute у img class="arrow", почему картинка не в левом верхнем углу class="border"?
+Картинка imgArrow задаётся не относительно родительского div class="border"!

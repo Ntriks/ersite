@@ -18,13 +18,12 @@ body {
 
 .mainButton a {
     text-decoration: none;
-    margin-right: 20px;
     font-family: Agmena;
     font-weight: 200px;
     font-size: 40px;
-    position: relative;
-    float: right;
-    bottom: 47px;
+    position: absolute;
+    bottom: 25px;
+    left: 1750.7px;
     color: rgb(216, 176, 117);
 }
 
@@ -46,7 +45,6 @@ body {
 }
 
 .main {
-    box-sizing: border-box;
     max-width: 775px;
     margin-left: auto;
     margin-right: auto;
@@ -79,14 +77,16 @@ body {
 }
 
 .secondImg {
-    max-width: 600px;
+    width: 700px;
     margin-left: auto;
     margin-right: auto;
 }
 
 .secondImg img {
     border-radius: 5px;
-    max-width: 600px;
+    width: 100%;
+    height: auto;
+    max-width: 700px;
 }
 
 .thirdImg {
@@ -101,4 +101,31 @@ body {
     border-radius: 5px;
     max-width: 367.5px;
     max-height: 202px;
+}
+
+.tb {
+    width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.tb table tr{
+    background-color: #e0e0e0;
+}
+
+.tb table tr td, th{
+    padding: 5px;
+    width: 140px;
+}
+
+.tb table tr th{
+    font-family: tahoma;
+    font-size: 17px;
+}
+
+.tb table tr td{
+    font-family: tahoma;
+    font-size: 17px;
 }
