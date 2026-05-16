@@ -43,31 +43,33 @@ body{
     width: 100%;
     display: flex;
     justify-content: center;
-    gap: 200px;
+    gap: 180px;
 }
 
 .weapon {
-    width: 525px;
+    max-width: 525px;   
 }
 
 .weaponImg {
-    width: 262.5;
-    height: 262.5;
+    max-height: 400px;
+    max-width: 400px;
 }
 
-.weaponImg img{
+.weaponImg img {
     width: 100%;
-    height: 100%;
 }
 
-.weaponDescription {
-
+.weaponName {
+    display: flex;
+    justify-content: center;
 }
 
-.weaponType {
-
+.weaponName a {
+    text-decoration: none;
+    font-size: 25px;
+    font-weight: 200px;
+    font-family: Agmena;
+    margin-top: 10px;
+    color: white;
 }
 
-.damageType {
-
-}

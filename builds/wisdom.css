@@ -129,3 +129,32 @@ body {
     font-family: tahoma;
     font-size: 17px;
 }
+
+.part1 {
+    margin-bottom: 25px;
+    border: 1px solid rgba(216, 176, 117, 0.3);     /* тонкая золотая линия */
+    border-radius: 6px;                               /* чуть скруглим углы */
+    padding: 30px 30px;                               /* воздух внутри */
+    background: rgba(255, 255, 255, 0.02);          /* едва заметный светлый фон */
+    box-shadow: 0 0 15px rgba(216, 176, 117, 0.08); /* мягкое золотое свечение */
+    transition: box-shadow 0.3s ease, border-color 0.3s ease;
+}
+
+.part1:hover {
+    border-color: rgba(216, 176, 117, 0.6);
+    box-shadow: 0 0 25px rgba(216, 176, 117, 0.15);
+}
+
+/* ---------- РАМКА ДЛЯ ВТОРОСТЕПЕННЫХ ИЗОБРАЖЕНИЙ ---------- */
+.secondImg img,
+.thirdImg img {
+    border: 1px solid rgba(216, 176, 117, 0.15);   /* почти невидимая обводка */
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);      /* мягкая тень */
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.secondImg img:hover,
+.thirdImg img:hover {
+    border-color: rgba(216, 176, 117, 0.5);
+    box-shadow: 0 4px 15px rgba(216, 176, 117, 0.2);
+}

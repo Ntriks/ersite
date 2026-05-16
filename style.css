@@ -2,7 +2,7 @@ body {
     margin: 0px;
     background-image: url('https://i.redd.it/wzqo9olsot471.png');
     background-repeat: no-repeat;
-
+    background-size: cover;
 }
 
 .menu {
@@ -27,6 +27,7 @@ body {
     margin-left: 22px;
     margin-top: 25px;
 }
+
 
 /* Выпадающее меню */
 

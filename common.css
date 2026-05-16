@@ -1,0 +1,249 @@
+/* =============================================
+   ОБЩИЕ СТИЛИ ДЛЯ ВСЕХ СТРАНИЦ
+   ============================================= */
+
+/* ---------- БАЗОВЫЕ НАСТРОЙКИ ---------- */
+body {
+    margin: 0;
+    background-color: #121212;
+    font-family: tahoma, sans-serif;
+    color: white;
+}
+
+/* ---------- ШАПКА (общая для всех) ---------- */
+.hat {
+    position: sticky;
+    top: 0;
+    background-color: #121212;
+    padding-bottom: 25px;
+    z-index: 10;
+}
+
+.icon {
+    width: 250px;
+    margin-left: 22px;
+    margin-top: 25px;
+}
+
+/* Кнопка "Главная" (временная, пока не заменена на меню) */
+.mainButton a {
+    text-decoration: none;
+    font-family: Agmena, serif;
+    font-size: 40px;
+    position: absolute;
+    bottom: 25px;
+    left: 1750.7px;
+    color: rgb(216, 176, 117);
+}
+
+/* ---------- МЕНЮ НАВИГАЦИИ (главная + будущие страницы) ---------- */
+.menu {
+    list-style: none;
+    padding: 7px 7px;
+    margin: 0;
+    display: flex;
+    font-size: 30px;
+    float: right;
+    margin-top: 19.5px;
+    margin-right: 15px;
+}
+
+.menu li {
+    position: relative;
+}
+
+.menu a {
+    text-decoration: none;
+    display: block;
+    padding: 5px;
+    font-family: Agmena, serif;
+    font-weight: 200;
+    color: rgb(216, 176, 117);
+    white-space: nowrap;
+}
+
+/* Выпадающее меню */
+.menu li ul {
+    position: absolute;
+    display: none;
+    z-index: 10;
+    left: 0;
+    top: 100%;
+    background-color: #1a1a1a;
+    border: 1px solid rgba(216, 176, 117, 0.3);
+    border-radius: 4px;
+    padding: 5px 0;
+    list-style: none;
+    margin: 0;
+}
+
+.menu li:hover > ul {
+    display: block;
+}
+
+.menu li ul li a {
+    padding: 8px 15px;
+    font-size: 24px;
+    color: rgb(216, 176, 117);
+    white-space: nowrap;
+}
+
+.menu li ul li a:hover {
+    background: rgba(216, 176, 117, 0.1);
+}
+
+/* ---------- ГЛАВНОЕ ИЗОБРАЖЕНИЕ ---------- */
+.mainImg {
+    max-width: 1920px;
+    max-height: 1080px;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+/* ---------- ЗАГОЛОВКИ СТРАНИЦ ---------- */
+.title {
+    text-align: center;
+    font-size: 50px;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    color: white;
+}
+
+/* ---------- КОНТЕЙНЕР КОНТЕНТА ---------- */
+.main {
+    box-sizing: border-box;
+    max-width: 775px;
+    margin-left: auto;
+    margin-right: auto;
+    line-height: 1.25;
+}
+
+/* ---------- ТЕКСТ ---------- */
+.text {
+    font-size: 20px;
+    margin: 25px 0;
+}
+
+/* ---------- ЗАГОЛОВКИ РАЗДЕЛОВ ---------- */
+.secondTitle {
+    font-size: 32px;
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.thirdTitle {
+    font-size: 25px;
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+/* ---------- СПИСКИ ---------- */
+.list {
+    list-style-type: circle;
+    font-size: 20px;
+    margin: 25px 0;
+}
+
+.list li::marker {
+    font-size: 25px;
+}
+
+/* ---------- ОДИНОЧНЫЕ ИЗОБРАЖЕНИЯ В ТЕКСТЕ ---------- */
+.secondImg {
+    max-width: 600px;
+    max-height: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.secondImg img {
+    display: block;
+    border-radius: 5px;
+    max-width: 100%;
+    height: auto;
+}
+
+/* ---------- ГАЛЕРЕЯ ИЗ ДВУХ ИЗОБРАЖЕНИЙ ---------- */
+.thirdImg {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 25px;
+}
+
+.thirdImg img {
+    border-radius: 5px;
+    max-width: 367.5px;
+    max-height: 202px;
+}
+
+/* ---------- ТАБЛИЦЫ (если нужны) ---------- */
+.tb {
+    width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 10px;
+    overflow: hidden;
+    margin-bottom: 25px;
+}
+
+.tb table tr {
+    background-color: #e0e0e0;
+}
+
+.tb table tr td,
+.tb table tr th {
+    padding: 5px;
+    width: 140px;
+    font-family: tahoma, sans-serif;
+    font-size: 17px;
+}
+
+/* ---------- РАМКА ДЛЯ ОПИСАНИЯ (part1) ---------- */
+.part1 {
+    margin-bottom: 25px;
+    border: 1px solid rgba(216, 176, 117, 0.3);
+    border-radius: 6px;
+    padding: 30px;
+    background: rgba(255, 255, 255, 0.02);
+    box-shadow: 0 0 15px rgba(216, 176, 117, 0.08);
+    transition: box-shadow 0.3s ease, border-color 0.3s ease;
+}
+
+.part1:hover {
+    border-color: rgba(216, 176, 117, 0.6);
+    box-shadow: 0 0 25px rgba(216, 176, 117, 0.15);
+}
+
+/* ---------- СТРЕЛКА-ССЫЛКА (для страницы списка боссов) ---------- */
+.arrow {
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    right: 15px;
+    bottom: 15px;
+    transition: transform 0.25s ease, filter 0.25s ease;
+}
+
+.arrowLink:hover .arrow {
+    transform: scale(1.15);
+    filter: brightness(1.2) drop-shadow(0 0 10px rgba(216, 176, 117, 0.8));
+}
+
+/* ---------- УТИЛИТАРНЫЕ ОТСТУПЫ ---------- */
+.mt25px {
+    margin-top: 25px;
+}
+
+.mb25px {
+    margin-bottom: 25px;
+}
+
+.mt0 {
+    margin-top: 0;
+}
+
+.mb0 {
+    margin-bottom: 0;
+}
